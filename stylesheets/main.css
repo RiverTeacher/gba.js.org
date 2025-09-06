@@ -443,9 +443,10 @@ li.hide {
 
 /* Only show controls on touch screens */
 @media (pointer: fine) {
-    .touch-controls {
-        display: none;
-    }
+    /* 強制的に常に表示する */
+.touch-controls {
+  display: grid !important;
+}
     #main {
         display: flex;
         justify-content: center;
